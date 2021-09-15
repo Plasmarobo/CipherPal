@@ -135,6 +135,7 @@ void self_test_render(uint8_t* back_buffer)
             }
             break;
         case SELF_TEST_EXIT:
+            blinks = 0;
             pop_render_function();
             state = SELF_TEST_ENTER;
             break;
